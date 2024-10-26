@@ -428,13 +428,14 @@ footer {
 footer p {
   text-align: center;
 }
-@media screen and (max-width: 600px) {
-  .section__pic-container {
+@media screen and (max-width: 500px) {
+  .responsive {
     width: 100%;
     max-width: 275px; /* Adjust based on how large you want it on mobile */
     height: auto;     /* Ensures the aspect ratio is maintained */
     margin: 0 auto;   /* Centers the image */
     display: flex;
+    padding: 0px 20px;
     justify-content: center;
   }
   .about-pic {
