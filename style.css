@@ -430,30 +430,17 @@ footer {
 footer p {
   text-align: center;
 }
-@media screen and (max-width: 768px) {
-  #profile {
-    display: block;
-    height: auto;
-    padding: 2rem;
-  }
-  .title {
-    font-size: 1.5rem;
-  }
-  /* Adjust spacing and font size */
-  p, .Skills-sub-title {
-    font-size: 1rem;
-  }
-}
-.menu-links {
-  transition: max-height 0.3s ease-in-out;
-}
 @media screen and (max-width: 600px) {
-  section {
-    padding: 2rem;
-    margin: 0;
+  .section__pic-container {
+    width: 100%;
+    max-width: 275px; /* Adjust based on how large you want it on mobile */
+    height: auto;     /* Ensures the aspect ratio is maintained */
+    margin: 0 auto;   /* Centers the image */
+    display: flex;
+    justify-content: center;
   }
-  .btn-container {
-    flex-direction: column;
-    gap: 1rem;
+  .about-pic {
+    width: 100%;
+    height: auto;
   }
 }
