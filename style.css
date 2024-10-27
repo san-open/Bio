@@ -418,6 +418,16 @@ article .icon {
   height: 2.5rem;
 }
 
+.counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;      /* Full width to center horizontally */
+  margin: 0 auto;   /* Center the div within any container */
+}
+
+
+
 /* FOOTER SECTION */
 
 footer {
