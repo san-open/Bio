@@ -275,3 +275,20 @@ footer p {
   text-align: center;
   color: #888888;
 }
+.about-containers {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-containers .details-container {
+  max-width: 320px;
+}
+.contact-icon-small {
+  height: 1.8rem;
+  width: auto;
+}
+
+.contact-info-container {
+  flex-direction: column;
+  gap: 0.5rem;
+}
