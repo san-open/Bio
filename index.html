@@ -13,28 +13,28 @@
     <!-- ================= NAVIGATION ================= -->
     <nav id="desktop-nav">
       <div class="logo">Sandeep Javalkar</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
     <nav id="hamburger-nav">
       <div class="logo">Sandeep Javalkar</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span><span></span><span></span>
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        <ul class="menu-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -49,7 +49,10 @@
         </p>
 
         <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='#contact'">
@@ -58,10 +61,18 @@
         </div>
 
         <div id="socials-container">
-          <img src="./assets/linkedin.png" class="icon"
-               onclick="location.href='https://linkedin.com/in/sandeep555'" />
-          <img src="./assets/github.png" class="icon"
-               onclick="location.href='https://github.com/san-open'" />
+          <img
+            src="./assets/linkedin.png"
+            class="icon"
+            alt="LinkedIn"
+            onclick="location.href='https://linkedin.com/in/sandeep555'"
+          />
+          <img
+            src="./assets/github.png"
+            class="icon"
+            alt="GitHub"
+            onclick="location.href='https://github.com/san-open'"
+          />
         </div>
       </div>
     </section>
@@ -73,14 +84,13 @@
 
       <div class="section-container">
         <div class="section__pic-container responsive">
-          <img src="./assets/about-pic.png" class="about-pic" />
+          <img src="./assets/about-pic.png" class="about-pic" alt="Profile Photo" />
         </div>
 
         <div class="about-details-container">
           <div class="about-containers">
 
             <div class="details-container">
-              <img src="./assets/Skills.png" class="icon" />
               <h3>Research Areas</h3>
               <p>
                 Non-Intrusive Load Monitoring (NILM)<br />
@@ -91,7 +101,6 @@
             </div>
 
             <div class="details-container">
-              <img src="./assets/education.png" class="icon" />
               <h3>Education</h3>
               <p>
                 PhD (Computer Science) – BITS Pilani, Goa<br />
@@ -120,62 +129,54 @@
               machine learning, signal processing, and data analytics for
               Non-Intrusive Load Monitoring (NILM).
               <br /><br />
-              I design and deploy real-time monitoring systems and dashboards
-              to support data-driven energy optimization and carbon footprint
-              reduction across campus-scale infrastructures.
+
             </p>
           </div>
         </div>
       </div>
-
-      <img src="./assets/arrow.png" class="icon arrow"
-           onclick="location.href='#skills'" />
     </section>
 
     <!-- ================= SKILLS ================= -->
-<section id="skills">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Skills</h1>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
 
-  <div class="Skills-details-container">
-    <div class="about-containers">
+      <div class="Skills-details-container">
+        <div class="about-containers">
 
-      <div class="details-container skill-card">
-        <h2 class="Skills-sub-title">Programming & Data</h2>
-        <ul class="skill-list">
-          <li>Python</li>
-          <li>SQL</li>
-          <li>HTML, CSS</li>
-          <li>JavaScript</li>
-        </ul>
+          <div class="details-container skill-card">
+            <h2 class="Skills-sub-title">Programming & Data</h2>
+            <ul class="skill-list">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>HTML, CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+
+          <div class="details-container skill-card">
+            <h2 class="Skills-sub-title">ML & Analytics</h2>
+            <ul class="skill-list">
+              <li>Machine Learning</li>
+              <li>Signal Processing</li>
+              <li>Non-Intrusive Load Monitoring (NILM)</li>
+              <li>Data Analytics</li>
+            </ul>
+          </div>
+
+          <div class="details-container skill-card">
+            <h2 class="Skills-sub-title">Tools</h2>
+            <ul class="skill-list">
+              <li>MATLAB</li>
+              <li>Tableau</li>
+              <li>Git & GitHub</li>
+              <li>Postman API</li>
+            </ul>
+          </div>
+
+        </div>
       </div>
-
-      <div class="details-container skill-card">
-        <h2 class="Skills-sub-title">ML & Analytics</h2>
-        <ul class="skill-list">
-          <li>Machine Learning</li>
-          <li>Signal Processing</li>
-          <li>Non-Intrusive Load Monitoring (NILM)</li>
-          <li>Data Analytics</li>
-        </ul>
-      </div>
-
-      <div class="details-container skill-card">
-        <h2 class="Skills-sub-title">Tools</h2>
-        <ul class="skill-list">
-          <li>MATLAB</li>
-          <li>Tableau</li>
-          <li>Git & GitHub</li>
-          <li>Postman API</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-
-  <img src="./assets/arrow.png" class="icon arrow" onclick="location.href='#projects'" />
-</section>
-
+    </section>
 
     <!-- ================= PROJECTS ================= -->
     <section id="projects">
@@ -186,7 +187,7 @@
         <div class="about-containers">
 
           <div class="details-container color-container">
-            <img src="./assets/project-1.jpeg" class="project-img" />
+            <img src="./assets/project-1.jpeg" class="project-img" alt="NILM Project" />
             <h2 class="Skills-sub-title project-title">
               Real-Time Energy Monitoring & NILM
             </h2>
@@ -197,7 +198,11 @@
           </div>
 
           <div class="details-container color-container">
-            <img src="./assets/project-2.jpeg" class="project-img" />
+            <img
+              src="./assets/project-2.jpeg"
+              class="project-img"
+              alt="DC-DC Converter Project"
+            />
             <h2 class="Skills-sub-title project-title">
               Hybrid DC–DC Boost Converter for Fuel Cells
             </h2>
@@ -209,39 +214,39 @@
 
         </div>
       </div>
-
-      <img src="./assets/arrow.png" class="icon arrow"
-           onclick="location.href='#contact'" />
     </section>
 
     <!-- ================= CONTACT ================= -->
-<section id="contact">
-  <p class="section__text__p1">Get In Touch</p>
-  <h1 class="title">Contact Me</h1>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
 
-  <div class="contact-info-upper-container">
+      <div class="contact-info-upper-container">
 
-    <div class="contact-info-container">
-      <img src="./assets/email.png" class="icon contact-icon-small" />
-      <a href="mailto:p20240420@goa.bits-pilani.ac.in">
-        p20240420@goa.bits-pilani.ac.in
-      </a>
-    </div>
+        <div class="contact-info-container">
+          <img src="./assets/email.png" class="icon" alt="Email" />
+          <a href="mailto:p20240420@goa.bits-pilani.ac.in">
+            p20240420@goa.bits-pilani.ac.in
+          </a>
+        </div>
 
-    <div class="contact-info-container">
-      <img src="./assets/linkedin.png" class="icon contact-icon-small" />
-      <a href="https://linkedin.com/in/sandeep555" target="_blank">
-        LinkedIn
-      </a>
-    </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" class="icon" alt="LinkedIn" />
+          <a href="https://linkedin.com/in/sandeep555" target="_blank">
+            LinkedIn
+          </a>
+        </div>
 
-    <div class="contact-info-container">
-      <img src="./assets/github.png" class="icon contact-icon-small" />
-      <a href="https://github.com/san-open" target="_blank">
-        GitHub
-      </a>
-    </div>
+        <div class="contact-info-container">
+          <img src="./assets/github.png" class="icon" alt="GitHub" />
+          <a href="https://github.com/san-open" target="_blank">
+            GitHub
+          </a>
+        </div>
 
-  </div>
-</section>
+      </div>
+    </section>
 
+    <script src="script.js"></script>
+  </body>
+</html>
