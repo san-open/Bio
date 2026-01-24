@@ -27,9 +27,7 @@
       <div class="logo">Sandeep Javalkar</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span></span><span></span><span></span>
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
@@ -46,15 +44,12 @@
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Sandeep Javalkar</h1>
         <p class="section__text__p2">
-          PhD Scholar (Computer Science) <br />
+          PhD Scholar (Computer Science)<br />
           BITS Pilani, Goa Campus
         </p>
 
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
             Download CV
           </button>
           <button class="btn btn-color-1" onclick="location.href='#contact'">
@@ -63,18 +58,10 @@
         </div>
 
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/sandeep555'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="GitHub"
-            class="icon"
-            onclick="location.href='https://github.com/san-open'"
-          />
+          <img src="./assets/linkedin.png" class="icon"
+               onclick="location.href='https://linkedin.com/in/sandeep555'" />
+          <img src="./assets/github.png" class="icon"
+               onclick="location.href='https://github.com/san-open'" />
         </div>
       </div>
     </section>
@@ -86,17 +73,14 @@
 
       <div class="section-container">
         <div class="section__pic-container responsive">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/about-pic.png" class="about-pic" />
         </div>
 
         <div class="about-details-container">
           <div class="about-containers">
+
             <div class="details-container">
-              <img src="./assets/Skills.png" alt="Skills icon" class="icon" />
+              <img src="./assets/Skills.png" class="icon" />
               <h3>Research Areas</h3>
               <p>
                 Non-Intrusive Load Monitoring (NILM)<br />
@@ -107,7 +91,7 @@
             </div>
 
             <div class="details-container">
-              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <img src="./assets/education.png" class="icon" />
               <h3>Education</h3>
               <p>
                 PhD (Computer Science) – BITS Pilani, Goa<br />
@@ -116,55 +100,144 @@
               </p>
             </div>
 
-            <!-- ===== Teaching Assistantship ===== -->
             <div class="details-container">
               <h3>Teaching Assistantship</h3>
               <p>
-                <strong>BITS Pilani, Goa Campus</strong><br />
-                Data Structures and Algorithms (Jan 2025 – May 2025)<br />
-                Deep Learning (Jul 2025 – Dec 2025)<br />
+                <strong>BITS Pilani, Goa</strong><br />
+                Data Structures and Algorithms (Jan–May 2025)<br />
+                Deep Learning (Jul–Dec 2025)<br />
                 Microprocessors and Interfacing (Jan 2026 – Present)
               </p>
             </div>
+
           </div>
 
           <div class="text-container">
             <p>
               I am a PhD scholar (Junior Research Fellow) in Computer Science at
               BITS Pilani, Goa, working on real-time energy monitoring and
-              sustainability-driven research. My research focuses on
-              Non-Intrusive Load Monitoring (NILM), where I apply machine
-              learning, signal processing, and data analytics to disaggregate
-              appliance-level energy consumption from aggregate electrical
-              signals.
+              sustainability-driven research. My work focuses on applying
+              machine learning, signal processing, and data analytics for
+              Non-Intrusive Load Monitoring (NILM).
               <br /><br />
-              I design and deploy real-time monitoring systems and dashboards to
-              support data-driven energy optimization and carbon footprint
-              reduction across campus-scale infrastructures. My academic
-              interests lie at the intersection of machine learning, power
-              systems, and sustainable computing, with the goal of producing
-              impactful research for both academia and real-world deployment.
+              I design and deploy real-time monitoring systems and dashboards
+              to support data-driven energy optimization and carbon footprint
+              reduction across campus-scale infrastructures.
             </p>
           </div>
         </div>
       </div>
 
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='#skills'"
-      />
+      <img src="./assets/arrow.png" class="icon arrow"
+           onclick="location.href='#skills'" />
     </section>
 
     <!-- ================= SKILLS ================= -->
-    <section id="skills"></section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+
+      <div class="Skills-details-container">
+        <div class="about-containers">
+
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Programming & Data</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python</h3><p>Advanced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>SQL</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>HTML / CSS</h3><p>Experienced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3><p>Intermediate</p></div></article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="Skills-sub-title">ML & Analytics</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Machine Learning</h3><p>Research</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Signal Processing</h3><p>Research</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>NILM</h3><p>Research</p></div></article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="Skills-sub-title">Tools</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>MATLAB</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Tableau</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>GitHub</h3><p>Intermediate</p></div></article>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" class="icon arrow"
+           onclick="location.href='#projects'" />
+    </section>
 
     <!-- ================= PROJECTS ================= -->
-    <section id="projects"></section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Research</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="Skills-details-container">
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+            <img src="./assets/project-1.jpeg" class="project-img" />
+            <h2 class="Skills-sub-title project-title">
+              Real-Time Energy Monitoring & NILM
+            </h2>
+            <p>
+              Campus-scale real-time dashboard and NILM-based disaggregation of
+              AC loads to enable energy optimization and sustainability.
+            </p>
+          </div>
+
+          <div class="details-container color-container">
+            <img src="./assets/project-2.jpeg" class="project-img" />
+            <h2 class="Skills-sub-title project-title">
+              Hybrid DC–DC Boost Converter for Fuel Cells
+            </h2>
+            <p>
+              Designed and simulated a hybrid DC–DC converter with optimized
+              control strategies for improved efficiency.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" class="icon arrow"
+           onclick="location.href='#contact'" />
+    </section>
 
     <!-- ================= CONTACT ================= -->
-    <section id="contact"></section>
+    <section id="contact">
+      <p class="section__text__p1">Get In Touch</p>
+      <h1 class="title">Contact Me</h1>
+
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" class="icon email-icon" />
+          <p>
+            <a href="mailto:p20240420@goa.bits-pilani.ac.in">
+              p20240420@goa.bits-pilani.ac.in
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" class="icon" />
+          <p><a href="https://linkedin.com/in/sandeep555">LinkedIn</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img src="./assets/github.png" class="icon" />
+          <p><a href="https://github.com/san-open">GitHub</a></p>
+        </div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
