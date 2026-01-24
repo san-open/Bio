@@ -16,7 +16,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -33,7 +33,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -57,7 +57,7 @@
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
             Contact Info
           </button>
         </div>
@@ -110,9 +110,20 @@
               <img src="./assets/education.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
               <p>
-                PhD (Computer Science) – BITS Pilani, Goa <br />
-                M.Tech (Power Systems & Automation) – Andhra University <br />
+                PhD (Computer Science) – BITS Pilani, Goa<br />
+                M.Tech (Power Systems & Automation) – Andhra University<br />
                 B.Tech (Electrical & Electronics) – Andhra University
+              </p>
+            </div>
+
+            <!-- ===== Teaching Assistantship ===== -->
+            <div class="details-container">
+              <h3>Teaching Assistantship</h3>
+              <p>
+                <strong>BITS Pilani, Goa Campus</strong><br />
+                Data Structures and Algorithms (Jan 2025 – May 2025)<br />
+                Deep Learning (Jul 2025 – Dec 2025)<br />
+                Microprocessors and Interfacing (Jan 2026 – Present)
               </p>
             </div>
           </div>
@@ -142,11 +153,18 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#Skills'"
+        onclick="location.href='#skills'"
       />
     </section>
 
-    <!-- Rest of your Skills, Projects, Contact, Footer remain unchanged -->
+    <!-- ================= SKILLS ================= -->
+    <section id="skills"></section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects"></section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact"></section>
 
     <script src="script.js"></script>
   </body>
