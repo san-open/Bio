@@ -282,13 +282,16 @@ nav {
   border-radius: 1.5rem;
 }
 
-/* ================= CONTACT ================= */
-
+/* ===== Center Contact Section Vertically ===== */
 #contact {
+  min-height: 100vh;                 /* take full screen height */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;           /* vertical centering */
+  align-items: center;               /* horizontal centering */
+  text-align: center;
 }
+
 
 .contact-info-upper-container {
   display: flex;
