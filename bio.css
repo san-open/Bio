@@ -10,7 +10,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
 body {
@@ -24,12 +23,12 @@ p {
   line-height: 1.6;
 }
 
+/* Default section layout */
 section {
-  scroll-snap-align: start;
   min-height: 100vh;
   padding: 4rem 0;
   margin: 0 10rem;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 90px;
 }
 
 /* ================= LINKS & BUTTONS ================= */
@@ -131,7 +130,7 @@ nav {
   overflow: hidden;
   transition: max-height 0.3s ease;
   border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
 .menu-links li {
@@ -157,6 +156,17 @@ nav {
 
 .hamburger-icon.open span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Sticky mobile nav */
+@media screen and (max-width: 1200px) {
+  #hamburger-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(15, 15, 18, 0.9);
+    backdrop-filter: blur(10px);
+  }
 }
 
 /* ================= PROFILE ================= */
@@ -282,16 +292,16 @@ nav {
   border-radius: 1.5rem;
 }
 
-/* ===== Center Contact Section Vertically ===== */
+/* ================= CONTACT ================= */
+
 #contact {
-  min-height: 100vh;                 /* take full screen height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;           /* vertical centering */
-  align-items: center;               /* horizontal centering */
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
 
 .contact-info-upper-container {
   display: flex;
@@ -339,6 +349,12 @@ nav {
 
   #profile {
     min-height: 100vh;
+  }
+
+  #contact {
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 
   .title {
